@@ -55,6 +55,8 @@ The addon is designed to stay lightweight, configurable, and extensible:
 - It can stop the music automatically when the fight ends.
 - It exposes a shared track registry so external music pack addons can register additional tracks.
 
+**DMCA/Content notice:** the bundled example track is “no copyright music” / royalty-free, provided only as a sample. If you ship custom packs, ensure you have rights to the audio you include.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
