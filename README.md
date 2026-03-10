@@ -57,6 +57,10 @@ The addon is designed to stay lightweight, configurable, and extensible:
 
 **DMCA/Content notice:** the bundled example track is “no copyright music” / royalty-free, provided only as a sample. If you ship custom packs, ensure you have rights to the audio you include.
 
+This addon is not affiliated with, endorsed by, or officially maintained by the BigWigs team.
+
+All rights related to BigWigs, including its name, branding, and associated assets, belong to their respective owners.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features

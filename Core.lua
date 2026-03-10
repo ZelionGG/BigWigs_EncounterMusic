@@ -75,6 +75,13 @@ plugin.pluginOptions = {
 		plugin.db.profile[info[#info]] = value
 	end,
 	args = {
+		disclaimer = {
+			type = "description",
+			name = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:16:16:0:0|t |cffffd700" .. L.optionsDisclaimer .. "|r\n\n",
+			order = 0.5,
+			width = "full",
+			fontSize = "large",
+		},
 		heading = {
 			type = "description",
 			name = L.optionsHeading .. "\n\n",
