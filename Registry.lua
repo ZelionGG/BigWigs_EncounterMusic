@@ -1,3 +1,6 @@
+local _, ns = ...
+local L = ns.L
+
 local api = rawget(_G, "BigWigsEncounterMusicAPI")
 if type(api) ~= "table" then
 	api = {}
@@ -28,7 +31,7 @@ end
 if not tracks.none then
 	tracks.none = {
 		id = "none",
-		name = "Aucune",
+		name = L.none,
 		source = "core",
 	}
 	order[#order + 1] = "none"

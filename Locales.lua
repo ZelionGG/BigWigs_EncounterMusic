@@ -2,7 +2,7 @@ local _, ns = ...
 ns.L = {}
 local L = ns.L
 
-L.none = "None"
+L.none = "- None -"
 L.optionsTitle = "Encounter Music"
 L.optionsHeading = "Choose a track to play automatically when a boss engages."
 L.track = "Encounter track"
@@ -13,7 +13,7 @@ L.noAudioApi = "EncounterMusic: unable to start track, no compatible audio API f
 
 local locale = GetLocale()
 if locale == "frFR" then
-	L.none = "Aucune"
+	L.none = "- Aucune -"
 	L.optionsTitle = "Encounter Music"
 	L.optionsHeading = "Choisis une piste à lancer automatiquement à l'engage d'un boss."
 	L.track = "Piste d'encounter"

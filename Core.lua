@@ -22,6 +22,13 @@ local function getTrackValues()
 	return { none = L.none }
 end
 
+local function getTrackOrder()
+	if type(api.GetTrackIds) == "function" then
+		return api.GetTrackIds()
+	end
+	return { "none" }
+end
+
 local function getFirstPlayableTrackId()
 	if type(api.GetTrackIds) ~= "function" then
 		return "none"
@@ -80,6 +87,7 @@ plugin.pluginOptions = {
 			name = L.track,
 			order = 2,
 			values = getTrackValues,
+			sorting = getTrackOrder,
 			width = "full",
 		},
 		stopOnEnd = {
