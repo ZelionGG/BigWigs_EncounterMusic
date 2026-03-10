@@ -11,6 +11,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  <kbd><img src="https://raw.githubusercontent.com/ZelionGG/BigWigs_EncounterMusic/refs/heads/main/logo.png" alt="BigWigs Encounter Music Logo" width="130" height="130"></kbd>
+  <br />
   <h3 align="center">BigWigs Encounter Music</h3>
 
   <p align="center">
