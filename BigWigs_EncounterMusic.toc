@@ -1,0 +1,38 @@
+## Interface: 120001
+
+## Title: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-zhCN: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-zhTW: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-deDE: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-frFR: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-itIT: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-koKR: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-ruRU: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-ptBR: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-esES: BigWigs [|cff69ccf0Encounter Music|r]
+## Title-esMX: BigWigs [|cff69ccf0Encounter Music|r]
+## Notes: Plays encounter music on BigWigs boss engage.
+## Notes-zhCN: Plays encounter music on BigWigs boss engage.
+## Notes-zhTW: Plays encounter music on BigWigs boss engage.
+## Notes-deDE: Plays encounter music on BigWigs boss engage.
+## Notes-frFR: Joue une musique pendant une rencontre de boss.
+## Notes-itIT: Plays encounter music on BigWigs boss engage.
+## Notes-koKR: Plays encounter music on BigWigs boss engage.
+## Notes-ruRU: Plays encounter music on BigWigs boss engage.
+## Notes-ptBR: Plays encounter music on BigWigs boss engage.
+## Notes-esES: Plays encounter music on BigWigs boss engage.
+## Notes-esMX: Plays encounter music on BigWigs boss engage.
+
+## LoadOnDemand: 1
+## Dependencies: BigWigs
+## Version: @project-version@
+## IconTexture: Interface\AddOns\BigWigs\Media\Icons\minimap_raid.tga
+## Author: ZelionGG
+## X-Category: Raid
+## X-Curse-Project-ID: 714747
+## X-Wago-ID: kNMdlEGz
+## X-BigWigs-LoadOn-CoreEnabled: 1
+
+Locales.lua
+Registry.lua
+Core.lua
