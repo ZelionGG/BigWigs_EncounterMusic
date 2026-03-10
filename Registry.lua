@@ -91,3 +91,10 @@ function api.GetTrackValues()
 	end
 	return values
 end
+
+api.RegisterTrack("encountermusic_paul_yudin_cinematic_trailer", {
+	name = "EncounterMusic: Paul Yudin - Cinematic Trailer",
+	path = "Interface\\AddOns\\BigWigs_EncounterMusic\\Music\\Paul Yudin - Cinematic Trailer.mp3",
+	source = "EncounterMusic",
+	channel = "Music",
+})
