@@ -1,6 +1,50 @@
-# BigWigs Encounter Music
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
 
-`BigWigs_EncounterMusic` is a BigWigs plugin that automatically plays a selected music track when a boss encounter starts.
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Discord][discord-shield]][discord-url]
+[![License][license-shield]][license-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center">BigWigs Encounter Music</h3>
+
+  <p align="center">
+    `BigWigs_EncounterMusic` is a BigWigs plugin that automatically plays a selected music track when a boss encounter starts.
+    <br />
+    <br />
+    <a href="https://github.com/ZelionGG/BigWigs_EncounterMusic/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ZelionGG/BigWigs_EncounterMusic/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#how-to-configure">How to configure</a></li>
+    <li><a href="#how-it-works">How it works</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#shared-api">Shared API</a></li>
+    <li><a href="#creating-a-custom-music-pack">Creating a custom music pack</a></li>
+    <li><a href="#current-behavior">Current behavior</a></li>
+    <li><a href="#localization">Localization</a></li>
+    <li><a href="#notes-for-development">Notes for development</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#project-structure">Project structure</a></li>
+  </ol>
+</details>
+
+## About The Project
 
 The addon is designed to stay lightweight, configurable, and extensible:
 
@@ -8,6 +52,8 @@ The addon is designed to stay lightweight, configurable, and extensible:
 - It lets you choose a single global encounter track.
 - It can stop the music automatically when the fight ends.
 - It exposes a shared track registry so external music pack addons can register additional tracks.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
 
@@ -18,9 +64,13 @@ The addon is designed to stay lightweight, configurable, and extensible:
 - Support for external music packs through `BigWigsEncounterMusicAPI`
 - Built-in localization structure via `Locales.lua`
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Requirements
 
 - `BigWigs`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Installation
 
@@ -29,6 +79,8 @@ Install the addon into your WoW AddOns folder:
 ```text
 World of Warcraft/_retail_/Interface/AddOns/BigWigs_EncounterMusic
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## How to configure
 
@@ -41,6 +93,8 @@ In game:
 - Use `Preview track` to test the selected music
 - Use `Stop track` to stop playback manually
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## How it works
 
 When BigWigs fires a boss engage event, the plugin:
@@ -51,6 +105,8 @@ When BigWigs fires a boss engage event, the plugin:
 - Falls back to `plugin:PlaySoundFile()` when needed
 
 When the encounter ends, the plugin stops the currently active track if `stopOnEnd` is enabled.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Architecture
 
@@ -80,6 +136,8 @@ The current example is:
 - `BigWigs_EncounterMusic_EpicMusicPack`
 
 This companion addon registers tracks into the shared registry during load.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Shared API
 
@@ -120,6 +178,8 @@ api.RegisterTrack("my_track_id", {
 - `channel`
   - audio channel, usually `Music`
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Creating a custom music pack
 
 To create your own pack:
@@ -139,12 +199,16 @@ BigWigs_EncounterMusic_MyPack/
     BossTheme.mp3
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Current behavior
 
 - The plugin uses one global selected track for all encounters
 - There is no boss-specific music mapping
 - If the selected track is missing, the profile is normalized to a valid fallback
 - If no track is selected, the plugin does nothing on engage
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Localization
 
@@ -153,12 +217,16 @@ Localization is defined in `Locales.lua` using the same simple pattern used by o
 - English strings are the base
 - Other locales override only the strings they need
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Notes for development
 
 - The addon is loaded on demand by BigWigs
 - The plugin is created with `BigWigs:NewPlugin("EncounterMusic")`
 - Do not manually call `plugin:Initialize()`
 - Music packs should register tracks through the shared registry, not by editing the core addon
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Troubleshooting
 
@@ -186,6 +254,8 @@ Check that:
 - the music pack addon is enabled
 - its file paths point to the correct `Music` folder
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Project structure
 
 ```text
@@ -196,3 +266,20 @@ BigWigs_EncounterMusic/
   Locales.lua
   README.md
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[contributors-shield]: https://img.shields.io/github/contributors/ZelionGG/BigWigs_EncounterMusic.svg?style=for-the-badge
+[contributors-url]: https://github.com/ZelionGG/BigWigs_EncounterMusic/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ZelionGG/BigWigs_EncounterMusic.svg?style=for-the-badge
+[forks-url]: https://github.com/ZelionGG/BigWigs_EncounterMusic/network/members
+[stars-shield]: https://img.shields.io/github/stars/ZelionGG/BigWigs_EncounterMusic.svg?style=for-the-badge
+[stars-url]: https://github.com/ZelionGG/BigWigs_EncounterMusic/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ZelionGG/BigWigs_EncounterMusic.svg?style=for-the-badge
+[issues-url]: https://github.com/ZelionGG/BigWigs_EncounterMusic/issues
+[discord-shield]: https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white
+[discord-url]: https://discord.gg/g7JZNGSU32
+[license-shield]: https://img.shields.io/badge/Licence-GPL3.0-blue.svg?style=for-the-badge
+[license-url]: https://github.com/ZelionGG/BigWigs_EncounterMusic/blob/main/LICENSE.txt
+[Lua]: https://img.shields.io/badge/lua-000000?style=for-the-badge&logo=lua&logoColor=white
+[Lua-url]: https://www.lua.org/
