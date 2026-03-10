@@ -1,4 +1,4 @@
-## Interface: 120001
+## Interface: 120001, 50503, 38000, 20505, 11508
 
 ## Title: BigWigs [|cff69ccf0Encounter Music|r]
 ## Title-zhCN: BigWigs [|cff69ccf0Encounter Music|r]
