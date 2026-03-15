@@ -24,8 +24,6 @@ jobs:
             wrath
             tbc
             vanilla
-          beta: false
-          ptr: true
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v8
